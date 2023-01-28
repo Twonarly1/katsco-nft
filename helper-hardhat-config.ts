@@ -1,16 +1,16 @@
 export interface networkConfigItem {
-    name?: string
-    subscriptionId?: string
-    callbackGasLimit?: string
-    vrfCoordinatorV2?: string
-    gasLane?: string
-    ethUsdPriceFeed?: string
-    mintFee?: string
-    maxSupply?: number
+    name?: string;
+    subscriptionId?: string;
+    callbackGasLimit?: string;
+    vrfCoordinatorV2?: string;
+    gasLane?: string;
+    ethUsdPriceFeed?: string;
+    mintFee?: string;
+    maxSupply?: number;
 }
 
 export interface networkConfigInfo {
-    [key: number]: networkConfigItem
+    [key: number]: networkConfigItem;
 }
 
 export const networkConfig: networkConfigInfo = {
@@ -31,12 +31,12 @@ export const networkConfig: networkConfigInfo = {
         gasLane: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15",
         callbackGasLimit: "500000", // 500,000 gas
         mintFee: "50000000000000000", // 0.01 ETH
-        subscriptionId: "8703", // add your ID here!
+        subscriptionId: "1001", // add your ID here!
         maxSupply: 400,
     },
-}
+};
 
-export const DECIMALS = "18"
-export const INITIAL_PRICE = "200000000000000000000"
-export const developmentChains = ["hardhat", "localhost"]
-export const VERIFICATION_BLOCK_CONFIRMATIONS = 6
+export const DECIMALS = "18";
+export const INITIAL_PRICE = "200000000000000000000";
+export const developmentChains = ["hardhat", "localhost"];
+export const VERIFICATION_BLOCK_CONFIRMATIONS = 6;
